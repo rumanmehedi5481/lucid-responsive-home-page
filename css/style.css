@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Global CSS Start */
+body {
+    font-family: "DM Sans", sans-serif !important;
+
+}
+
+/* .container {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1160px;
+    box-sizing: border-box;
+
+} */
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none !important;
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #999999;
+}
+
+h2 {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+}
+
+h5 {
+    color: #008ed6 !important;
+    font-weight: 700 !important;
+    font-style: uppercase !important;
+    font-size: 14px !important;
+    margin-bottom: 7px !important;
+    text-transform: uppercase;
+}
+
+/* Global CSS Ending */
+
+/* Header Section Start */
+.header {
+    background: url(../img/banner.png) center center no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+.header .nav-item .nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .nav-item .nav-link{
+    position: relative ;
+    margin-left: 16px ;
+}
+
+
+.navbar .nav-item .nav-link::before{
+    content: '';
+    position: absolute ;
+    bottom: 0 ;
+    left: 0 ;
+    width: 0;
+    color: #008ed6 ;
+    transition: 0.7s ;
+  
+} 
+.navbar .nav-item .nav-link:hover::before{
+    width: 100% ;
+    transition: 0.7s ;
+    border-bottom:  solid #008ed6;
+    height: 50px;
+
+}
+
+
+.header .banner-content .banner-inner h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.navbar-toggler {
+    border: 1px solid #008ed6;
+    color: #008ed6 !important;
+    background: #008ed6;
+    padding: 2px 3px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+.header .banner-section .cus-height {
+    height: 75vh;
+}
+.header .banner-content .banner-inner p {
+    color: #fff;
+}
+
+.header .banner-content .banner-inner button.btn {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: 0.4s;
+    font-weight: 700;
+
+}
+
+.header .banner-content .banner-inner button.btn.btn-primary {
+    transition: 0.7s;
+
+}
+
+.header .banner-content .banner-inner button.btn.btn-primary:hover {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.7s;
+
+}
+
+.header .banner-content .banner-inner button.btn.btn-secondary {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.7s;
+
+}
+
+.header .banner-content .banner-inner button.btn.btn-secondary:hover {
+    color: rgb(255, 255, 255);
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.7s;
+
+}
+
+.header .banner-content .banner-inner .banner-btn {
+    margin-top: 35px;
+}
+
+button.btn.btn-primary:hover .btn-secondary {
+    color: rgb(255, 255, 255) !important;
+    background-color: #008ed6 !important;
+    border: 1px solid #008ed6 !important;
+    transition: 0.7s !important;
+
+}
+
+/* features Section Start */
+.features {
+    padding-bottom: 50px;
+}
+
+.features .title {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.features .title .underline {
+    height: 3px;
+    width: 50px;
+    background-color: #008ed6;
+    margin: 25px auto 0;
+    left: 48%;
+    transition: 0.7s;
+}
+
+.features:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+.features i {
+    font-size: 30px;
+    color: #008ed6;
+    background-color: white !important;
+    width: 88px;
+    height: 88px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 50%;
+    padding: 26px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+}
+
+.features i:hover {
+    color: #fff;
+    background-color: #008ed6 !important;
+    transition: 0.7s;
+}
+
+.features p {
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* features Section End */
+
+
+/* Details Section Start */
+.details {
+    padding-bottom: 50px;
+}
+
+.details .content {
+    padding-top: 50px;
+}
+
+hr {
+    padding-bottom: 50px;
+}
+
+.details .content .underline {
+    width: 55px;
+    height: 3px;
+    background: #008ed6;
+    margin-bottom: 30px;
+    transition: 0.7s;
+}
+
+.details:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+.details .content p {
+    padding-bottom: 30px;
+}
+
+.details .content .one {
+    padding-bottom: 20px;
+}
+
+.details .content .one i {
+    color: #008ed6;
+}
+
+/* Details Section End */
+
+/* --------Customize Section start--------- */
+.customize {
+    background-color: #f2f2f2;
+    padding: 55px 0;
+}
+
+.customize .pic img {
+    width: 450px;
+    height: 100%;
+}
+
+.customize .underline {
+    width: 55px;
+    height: 3px;
+    background: #008ed6;
+    margin: 30px 0;
+    transition: 0.7s;
+}
+
+.customize:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+/* -------------cutomize Section End------------- */
+
+/* -------testimonials Section Start---------- */
+.testimonials {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: url(../img/test.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.testimonials .underline {
+    height: 3px;
+    width: 5%;
+    background: #008ed6;
+    margin: 30px auto 0;
+    transition: 0.7s;
+}
+
+.testimonials:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+.testimonials .item {
+    padding-bottom: 50px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* -------testimonials Section End---------- */
+
+/* ----------------call-to-action Start---------- */
+.call-to-action {
+
+    background: #000;
+    padding: 50px 0;
+
+}
+
+.call-to-action button.btn.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: #008ed6 !important;
+    border: 1px solid #008ed6 !important;
+    border-radius: 4px;
+    margin-right: 15px;
+    transition: 0.7s;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+
+.call-to-action button.btn.btn-primary:hover {
+    background: transparent !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+    transition: 0.7s !important;
+
+}
+
+.call-to-action h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.call-to-action button.btn.btn-secondary {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.7s;
+    margin-left: 15px !important;
+    padding: 10px 20px;
+}
+
+.call-to-action button.btn.btn-secondary:hover {
+    color: rgb(255, 255, 255);
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.7s;
+}
+
+.call-to-action span {
+    color: #999999;
+    font-weight: 600;
+}
+
+/* ----------------call-to-action End---------- */
+
+/* --------------------- Pricing section start--------------- */
+.pricing {
+    padding: 50px 0;
+}
+
+.pricing .heding {
+    padding-bottom: 50px;
+}
+
+.pricing .heding .underline {
+    width: 55px;
+    height: 3px;
+    background: #008ed6;
+    margin: 25px auto 0;
+    transition: 0.7s;
+}
+
+.pricing:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+.card-header h3 {
+    padding: 25px 0;
+    font-size: 20px;
+    font-weight: 700 !important;
+    transition: 0.7s;
+}
+
+.card-body {
+    padding: 30px 23px;
+    transition: 0.7s;
+}
+
+.card-body h4 {
+    font-size: 40px;
+}
+
+.pricing button.btn.btn-light {
+    padding: 12px 52px;
+    color: #008ed6;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    transition: 0.7s;
+    font-weight: 700;
+    margin: 20px 0 35px;
+}
+
+.card:hover h3 {
+
+    color: #008ed6;
+    transition: 0.7s;
+}
+
+.card:hover .card-body {
+    background-color: #008ed6;
+    color: #fff;
+    transition: 0.7s;
+}
+
+.card:hover button.btn.btn-light {
+    background-color: #008ed6;
+    color: #fff;
+    transition: 0.7s;
+}
+
+.card-footer p {
+    padding: 20px 15px 1px;
+}
+
+/* --------------------- Pricing section End--------------- */
+
+/* -----------------------Contact Section start------------------------ */
+.contact {
+    padding: 50px 0;
+    background-color: #ededed;
+    text-align: center;
+
+
+}
+
+.contact .underline {
+    width: 55px;
+    height: 3px;
+    background: #008ed6;
+    margin: 25px auto 0;
+    transition: 0.7s;
+}
+
+.contact:hover .underline {
+    width: 100px;
+    transition: 0.7s;
+}
+
+.contact .col-lg-4 {
+    padding: 50px 0;
+}
+
+.contact i {
+    color: #008ed6;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+/* -----------------------Contact comment Section start------------------------ */
+.contact .comment {
+    position: relative;
+    left: 0;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #15141a;
+    padding: 50px 30px;
+    width: 64%;
+    text-align: end;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.contact .comment input {
+    padding: 15px;
+    width: 100%;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.contact .comment textarea {
+    height: 141px;
+    width: 100%;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background: #15141a;
+    color: #999999;
+}
+
+.contact .comment .btn-primary {
+    padding: 15px 0px;
+    color: #fff;
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    border-radius: 4px;
+    transition: 0.7s;
+    font-weight: 700;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.contact .comment .btn-primary:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+}
+
+/* -----------------------Contact Section End------------------------ */
+/* ------------fotter Section Start-------------------- */
+.fotter {
+    background-color: #15141a;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.fotter ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fotter ul li a {
+    color: #999999;
+    margin-right: 30px;
+    transition: 0.7s;
+}
+
+.fotter ul li a:hover {
+    color: #008ed6;
+    transition: 0.7s;
+}
+
+/* ------------fotter Section Start-------------------- */
+
+/* ---------------------------Responsive Start---------------------- */
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    .header {
+        padding: 50px 15px !important;
+        text-align: center;
+    }
+    .navbar-toggler {
+        border: 1px solid #008ed6;
+        color: #008ed6 !important;
+        background: #008ed6;
+        padding: 2px 3px;
+        border-radius: 5px;
+        transition: 0.7s;
+        margin-right: 10px !important;
+    }
+
+    .header .navbar {
+        text-align: left;
+        position: absolute;
+    }
+    .header .navbar .nav-item {
+        margin: 4px 0px 25px 0;
+    }
+    .header .nav-back {
+        background: #008ed6;
+        
+    }
+
+    .header .banner-content .banner-inner h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        padding: 0px 100px;
+    }
+
+    .header .banner-content .banner-inner p {
+        color: #fff;
+        font-size: 14px;
+        padding: 0px 170px;
+    }
+
+    .header .banner-content .banner-inner .banner-btn {
+        padding-top: 50px;
+
+    }
+
+    .header .banner-section .cus-height {
+        height: 100vh;
+    }
+
+    .features {
+        padding: 50px 0px 10px;
+    }
+
+    .features .col-lg-3 {
+        margin-bottom: 40px;
+    }
+
+    .features p {
+        width: 51%;
+    }
+
+    details {
+        padding: 50px 0;
+    }
+
+    .details img {
+        width: 100%;
+    }
+
+    .details span {
+        font-size: 14px;
+    }
+
+    .details-icon {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .details .content .one i {
+        color: #008ed6;
+        font-size: 14px;
+    }
+
+    .details .content {
+        text-align: center;
+    }
+
+    .details .underline {
+        margin: 0 auto 30px;
+    }
+
+    .details .content p {
+        padding: 20px 75px;
+    }
+
+    .customize {
+        background-color: #f2f2f2;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .customize .underline {
+        margin: 0 auto 30px;
+    }
+
+    .customize .pic img {
+        width: 100%;
+
+    }
+
+    .owl-carousel.owl-theme.owl-loaded.owl-drag {
+        padding: 0 50px;
+    }
+
+    .call-to-action {
+        background: #000;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .action-btn {
+        margin-top: 15px;
+    }
+
+    .pricing {
+        padding: 50px 0 10px;
+    }
+
+    .pricing .card {
+        margin-bottom: 40px !important;
+    }
+
+    .pricing .col-lg-3 {
+        padding: 10px 50px;
+    }
+
+    .pricing .card-footer p {
+        padding: 0px 176px;
+        line-height: 30px;
+        font-size: 18px;
+        padding-top: 30px;
+    }
+
+    .pricing button.btn.btn-light {
+        padding: 14px 95px;
+        margin: 20px 0 50px;
+        font-size: 18px;
+    }
+
+    .contact {
+        padding: 50px 0px;
+    }
+
+    .contact .comment .btn-primary {
+        width: 100%;
+    }
+
+    .contact .comment {
+        width: 75%;
+        border-radius: 10px;
+    }
+
+    .contact .col-lg-4 {
+        padding-top: 25px;
+    }
+
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* CSS */
+
+
+    /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* Mobile Global CSS */
+    p {
+        font-size: 14px;
+        line-height: 23px;
+        color: #999999;
+    }
+
+    h2 {
+        font-size: 25px !important;
+        font-weight: 700 !important;
+    }
+
+    h5 {
+        color: #008ed6 !important;
+        font-weight: 700 !important;
+        font-style: uppercase !important;
+        font-size: 10px !important;
+        margin-bottom: 5px !important;
+        text-transform: uppercase;
+    }
+
+
+    /* Mobile Global Css End  */
+    .header .nav-back {
+        background: #008ed6;
+        
+    }
+
+    .header .banner-content .banner-inner h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .header {
+        text-align: center;
+        height: 66vh;
+    }
+    .header .navbar .nav-item {
+        margin: 4px 0px 30px 0;
+        columns: #fff;
+        border-radius: 5px;
+    }
+
+    .header .banner-content .banner-inner button.btn {
+        padding: 6px 12px;
+    }
+
+    .header .banner-content .banner-inner button.btn.btn-primary {
+        font-size: 12px;
+    }
+
+    .header .banner-section .cus-height {
+        height: 100vh;
+    }
+
+    .header .banner-content .banner-inner button.btn.btn-secondary {
+        font-size: 12px;
+    }
+
+    .header .navbar {
+        text-align: left;
+        position: absolute;
+    }
+
+    .features .col-lg-3 {
+        margin-bottom: 40px;
+    }
+
+    .features {
+        padding-top: 50px;
+    }
+
+    .features p {
+        width: 65%;
+
+    }
+
+    .details {
+        padding: 50px 0 !important;
+    }
+
+    .details img {
+        width: 100%;
+    }
+
+    .customize .content {
+        text-align: center;
+    }
+
+    .customize .content p {
+        padding: 0 16px;
+    }
+
+    .customize .pic img {
+        width: 100%;
+    }
+
+    .customize .underline {
+        width: 55px;
+        height: 3px;
+        background: #008ed6;
+        margin: 0 auto 30px;
+
+    }
+
+    section.call-to-action {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .call-to-action button.btn.btn-primary {
+        padding: 7px 15px;
+    }
+
+    .call-to-action button.btn.btn-secondary {
+        padding: 7px 15px;
+    }
+
+    .call-to-action button.btn.btn-primary {
+        font-size: 14px;
+    }
+
+    .call-to-action button.btn.btn-secondary {
+        font-size: 14px;
+    }
+
+    .testimonials .item {
+        padding: 0px 59px;
+    }
+
+    .pricing {
+        padding: 50px 0 10px;
+    }
+
+    .pricing .card {
+        margin-bottom: 40px !important;
+    }
+
+    .pricing button.btn.btn-light {
+        padding: 15px 60px;
+    }
+
+    .card-footer p {
+        padding: 20px 54px;
+        line-height: 30px;
+    }
+
+    .pricing button.btn.btn-light {
+        padding: 15px 68px;
+    }
+
+    .pricing .card-btn {
+        text-align: center !important;
+        padding-bottom: 15px;
+    }
+
+    .contact i {
+        color: #008ed6;
+        font-size: 25px;
+    }
+
+    .contact .col-lg-4 {
+        padding: 30px 0;
+    }
+
+    .contact .comment {
+        padding: 50px 30px;
+        width: 85%;
+    }
+
+    .contact .comment {
+        padding: 25px 12px;
+        width: 85%;
+        border-radius: 10px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    .fotter .fa-brands {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .fotter p {
+        font-size: 14px !important;
+    }
+
+    /* CSS */
+
+}
+
+
+/* ---------------------------Responsive End---------------------- */
